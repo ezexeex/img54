@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mars</title>
+    <style>
+      .red {
+        background-color: red;
+        padding: 20px;
+      }
+      .tomato {
+        background-color: tomato;
+        padding: 20px;
+      }
+      .gray {
+        color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#mars">Mars</a>
+        <a href="#video">Video</a>
+        <a href="#form">Form</a>
+        <a href="#divspan">Divspan</a>
+      </nav>
+    </header>
+    <section id="mars">
+      <img
+        src="./images/mars.jfif"
+        alt=""
+        width="200"
+        height="200"
+        title="mars"
+      />
+      <ul>
+        <li>
+          <p>
+            Марс — четвёртая по удалённости от Солнца и седьмая по размеру
+            планета Солнечной системы; масса планеты составляет 10,7 % массы
+            Земли.
+          </p>
+        </li>
+        <li>
+          <p>
+            Марс — планета земной группы с разреженной атмосферой (давление на
+            поверхности в 160 раз меньше земного).
+          </p>
+        </li>
+      </ul>
+    </section>
+    <section id="video">
+      <video
+        src="videos\Cat intersting gopro.mp4"
+        controls
+        width="400"
+        height="400"
+        loop
+        autoplay
+        muted
+      ></video>
+    </section>
+    <section id="form">
+      <form>
+        <input type="text" placeholder="Введите имя" /> <br />
+        <label for="chtck1">Хотите получать от нас письмо?</label>
+        <input type="checkbox" name="checkbox1" id="check1" />
+
+        <p>Какой у вас пол?</p>
+        <label for="g1">Мужчина</label>
+        <input type="radio" name="gender" id="g1" value="Мужчина" />
+        <label for="g2">Женщина</label>
+        <input type="radio" name="gender" id="g2" value="Женщина" />
+        <label for="g3">Не скажу</label>
+        <input type="radio" name="gender" id="g3" value="Не скажу" />
+        <label for="g4">Ламинат</label>
+        <input type="radio" name="gender" id="g4" value="Ламинат" />
+
+        <input type="password" name="pass" id="p1" />
+        <input type="submit" value="Отправить" />
+      </form>
+    </section>
+    <section id="divspan">
+      <div class="red">
+        <p>Я текст внутри контиейнера с классом RED</p>
+      </div>
+      <div class="tomato">
+        <p>Я текст внутри контиейнера с классом TOMATO</p>
+      </div>
+      <h1>Пивет я <span class="gray">серое</span> слово</h1>
+    </section>
+  </body>
+</html>
